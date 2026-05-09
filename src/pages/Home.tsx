@@ -48,7 +48,7 @@ export default function Home({ onAddToCart }: HomeProps) {
           {/* shop now button */}
           <Link
             to="/shop"
-            className="shop-btn btn btn-success btn-lg rounded-pill px-5"
+            className="btn btn-success btn-lg rounded-pill px-5 shop-btn "
           >
             Shop Now
           </Link>
@@ -78,7 +78,7 @@ export default function Home({ onAddToCart }: HomeProps) {
 
             {/* shop now button */}
             <button
-              className="btn btn-danger btn-lg rounded-pill px-5 mt-3"
+              className="btn btn-danger btn-lg rounded-pill px-5 mt-3 buy-now-btn"
               onClick={handleMothersDayPurchase}
             >
               Buy Now

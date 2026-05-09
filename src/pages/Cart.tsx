@@ -95,7 +95,7 @@ export default function Cart({
                   <h5 className="card-text">Total: ${(subtotal * 1.13).toFixed(2)}</h5>
 
                   <div className="d-flex justify-content-center gap-3">
-                    <Link to="/" className="btn btn-outline-secondary w-50 mt-3 ms-2">
+                    <Link to="/shop" className="btn btn-outline-secondary w-50 mt-3 ms-2">
                       Continue Shopping
                     </Link>
                     <Link to="/checkout" className="btn btn-primary w-50 mt-3">

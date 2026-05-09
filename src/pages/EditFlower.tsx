@@ -49,7 +49,7 @@ export default function EditFlower() {
     event.preventDefault();
     if (!id) return;
     await updateFlower(id, flower);
-    navigate("/shop");
+    navigate("/admin");
   }
  
   return (
