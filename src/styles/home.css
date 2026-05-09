@@ -1,0 +1,40 @@
+/* Home Page Styling */
+
+/* Welcome Banner */ 
+.hero-banner {
+  min-height: 400px;
+  background-image: url(https://images.pexels.com/photos/34789793/pexels-photo-34789793.jpeg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+.shop-btn {
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+/* Seasonal Promotion */
+.mothers-day-img {
+  min-height: 400px;
+  width: 100%;
+  background-image: url(https://images.pexels.com/photos/2014698/pexels-photo-2014698.jpeg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.mothers-day-content {
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
