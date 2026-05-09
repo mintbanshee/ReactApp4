@@ -1,73 +1,157 @@
-# React + TypeScript + Vite
+# 🌸 Bloom & Petal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bloom & Petal is a React flower shop application originally created from a classroom demo project and later upgraded into a more polished and user-focused experience.
 
-Currently, two official plugins are available:
+This project focuses on improving user experience, refining application flow, and creating clearer separation between customer and admin interactions while continuing to expand React development and testing skills.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The application includes responsive design improvements, custom modal interactions, CRUD functionality, cart and checkout flow, role-based interfaces, and unit testing using Vitest and React Testing Library.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+### 🌷 Customer Features
+- Browse flower products
+- Add and remove items from cart
+- Increase and decrease product quantities
+- Mock checkout experience
+- Seasonal promotional homepage sections
+- Responsive shopping experience
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🌿 Admin Features
+- Add new flower products
+- Edit existing products
+- Delete products with confirmation modals
+- Improved admin dashboard flow
+- Role-based navigation and interface controls
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🎨 UI / UX Improvements
+- Responsive layouts and spacing improvements
+- Custom modals replacing browser alerts
+- Improved cart and checkout experience
+- Landing page redesign with promotional sections
+- Conditional rendering based on user role
+- Cleaner navigation flow and button consistency
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 🧪 Testing
+- Unit testing with Vitest
+- Component testing with React Testing Library
+- Mocked callback testing
+- Modal interaction testing
+- Cart rendering and calculation testing
+- User interaction simulation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 🛠️ Tech Stack
+
+- React
+- TypeScript
+- Vite
+- Bootstrap
+- Firebase
+- Vitest
+- React Testing Library
+
+---
+
+## 🎥 Demo Walkthrough
+
+Watch the project walkthrough here:
+
+
+https://github.com/user-attachments/assets/c432b102-3290-456b-b9e8-7679c0059844
+
+--- 
+
+## 📸 UI Improvements
+
+### 🏠 Landing Page Enhancements
+<img width="1739" height="994" alt="Home" src="https://github.com/user-attachments/assets/cfc96b40-97dc-448f-b3c5-a330f1cbe170" />
+
+### 🌿 Admin and Customer Separation
+<img width="1739" height="992" alt="Admin" src="https://github.com/user-attachments/assets/1a4f3fc9-7de3-4646-a221-d24ff7bef139" />
+
+### 🛒 Improved Cart & Checkout Flow
+<img width="1900" height="967" alt="Cart" src="https://github.com/user-attachments/assets/af0cf87b-d14a-40b4-b8ac-53d36a66eb4d" />
+
+### 🌸 Custom Modal Improvements
+<img width="1899" height="1047" alt="OrderPlaced" src="https://github.com/user-attachments/assets/0f7d407c-741e-49ef-aaa5-08e21d6a9897" />
+
+--- 
+
+### 🧪 Unit Testing
+<img width="833" height="972" alt="FlowerCard-test" src="https://github.com/user-attachments/assets/a0273494-b4fb-4b9b-b42f-5eb790c7f554" />
+<img width="819" height="970" alt="AdminCard-test" src="https://github.com/user-attachments/assets/aead8fce-ba52-4811-ad16-98a1007b60bc" />
+<img width="830" height="966" alt="Cart-test" src="https://github.com/user-attachments/assets/b40fd8b2-1ce4-48b7-a4be-98b6217fb25e" />
+
+---
+
+## 🚀 Installation
+
+Clone the repository:
+
+```bash
+git clone <your-repo-url>
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Run tests:
+
+```bash
+npm test
+```
+
+---
+
+## 🤖 AI Usage
+
+AI was used as a support tool during development, debugging, testing setup, and UI/UX refinement throughout this project.
+
+AI assistance included:
+- Troubleshooting React, TypeScript, routing, and testing issues
+- Explaining unit testing concepts and Vitest setup
+- Assisting with component testing patterns and mocked function testing
+- Supporting responsive layout and UX refinement ideas
+- Reviewing component structure and prop flow
+
+All implementation decisions, testing, styling, project organization, feature selection, and final code changes were reviewed, written, and controlled by me.
+
+---
+
+## 🌱 Future Improvements
+
+Potential future additions for Bloom & Petal include:
+- Firebase authentication roles for admin/user accounts
+- Real payment integration
+- Wishlist functionality
+- Order history tracking for customers with an account 
+- Expanded seasonal promotions
+- Accessibility improvements and animations
+
+---
+
+## 🌸 Project Reflection
+
+One of the most enjoyable parts of this project was taking an existing classroom demo and refining it into a more thoughtful and polished user experience.
+
+This project provided valuable experience with:
+- Component structure
+- State management
+- Conditional rendering
+- Responsive UI refinement
+- User-focused design decisions
+- Unit testing and mocked interactions
+
+It also reinforced the importance of refining and improving existing applications rather than only building projects from scratch.
